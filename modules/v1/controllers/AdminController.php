@@ -74,10 +74,8 @@ class AdminController extends ActiveController
                 'login' => ['post'],
                 'rbac'=>['post'],
                 'displaysum'=>['get']
-
             ]
         ];
-
         // remove authentication filter
         $auth = $behaviors['authenticator'];
         unset($behaviors['authenticator']);
